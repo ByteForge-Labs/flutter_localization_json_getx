@@ -1,0 +1,13 @@
+{
+    "en": {
+      "title": "Hello World!",
+      "buttonText": "Click Me",
+      "lorem":"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available."
+    },
+    "fr": {
+      "title": "Bonjour le monde!",
+      "buttonText": "Cliquez ici",
+      "lorem":"Dans l'édition et la conception graphique, Lorem ipsum est un texte d'espace réservé couramment utilisé pour démontrer la forme visuelle d'un document ou d'une police de caractères sans s'appuyer sur un contenu significatif. Lorem ipsum peut être utilisé comme espace réservé avant que la copie finale ne soit disponible."
+    }
+  }
+  
