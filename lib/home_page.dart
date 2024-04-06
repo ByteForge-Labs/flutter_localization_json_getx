@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-   //  DemoLocalizations.loadLocale(Localizations.localeOf(context));
+     DemoLocalizations.loadLocale(Localizations.localeOf(context));
 
     return Scaffold(
       appBar: AppBar(

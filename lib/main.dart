@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localization_json_getx/demo_localization.dart';
 import 'package:flutter_localization_json_getx/home_page.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-
+void main() => runApp( const MyApp());
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
