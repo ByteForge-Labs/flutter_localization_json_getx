@@ -3,15 +3,15 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class OnewordLocalizations {
-  OnewordLocalizations(this.locale);
+class DemoLocalizations {
+  DemoLocalizations(this.locale);
 
   final Locale locale;
 
-  static OnewordLocalizations of(BuildContext context) {
-    return Localizations.of<OnewordLocalizations>(
+  static DemoLocalizations of(BuildContext context) {
+    return Localizations.of<DemoLocalizations>(
       context,
-      OnewordLocalizations,
+      DemoLocalizations,
     )!;
   }
 

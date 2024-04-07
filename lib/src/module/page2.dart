@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localization_json_getx/localization/demo_localizations.dart';
 
 
 class Page2 extends StatelessWidget {
@@ -6,12 +7,14 @@ class Page2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+              final DemoLocalizations langs = DemoLocalizations.of(context);
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Page 2'),
       ),
-      body: const Center(
-        child: Text('demoData'),
+      body:  Center(
+        child: Text(langs.translate('additionalInfoSubtitle'))
       ),
     );
   }
