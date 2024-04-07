@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_localization_json_getx/lang_controller.dart';
 import 'package:flutter_localization_json_getx/localization/demo_localizations.dart';
 import 'package:flutter_localization_json_getx/src/module/page1.dart';
 import 'package:flutter_localization_json_getx/src/module/page2.dart';
@@ -10,7 +9,6 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    LangController langController = Get.put(LangController());
     final DemoLocalizations langs = DemoLocalizations.of(context);
 
     return Scaffold(
@@ -20,8 +18,7 @@ class HomePage extends StatelessWidget {
         actions: [
           PopupMenuButton<String>(
             onSelected: (String result) {
-
-              langController.changeLocale( Locale(result));
+              Get.updateLocale(Locale(result));
             },
             itemBuilder: (BuildContext context) => <PopupMenuEntry<String>>[
               const PopupMenuItem<String>(
@@ -76,9 +73,7 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
-      body:  Center(
-        child: Text(langs.translate('demoText1'))
-      ),
+      body: Center(child: Text(langs.translate('demoText1'))),
     );
   }
 }
