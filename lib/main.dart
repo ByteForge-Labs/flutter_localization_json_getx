@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_localization_json_getx/localization/demo_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get/get.dart';
 import 'home_page.dart';
@@ -16,17 +15,16 @@ class MyApp extends StatelessWidget {
     return GetBuilder<LangController>(
       init: LangController(),
       builder: (controller) {
-        return MaterialApp(
-          locale: controller.locale,
-          supportedLocales: const [Locale('en'), Locale('ar')],
-          localizationsDelegates: const [
+        return const GetMaterialApp(
+          supportedLocales: [Locale('en'), Locale('ar')],
+          localizationsDelegates: [
             DemoLocalizationsDelegate(),
             GlobalMaterialLocalizations.delegate,
             GlobalWidgetsLocalizations.delegate,
             GlobalCupertinoLocalizations.delegate,
           ],
           title: 'Localization Demo',
-          home: const HomePage(),
+          home: HomePage(),
         );
       },
     );

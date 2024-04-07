@@ -77,7 +77,7 @@ class HomePage extends StatelessWidget {
         ),
       ),
       body:  Center(
-        child: Text(langs.translate('establishmentRegistrationInfo'))
+        child: Text(langs.translate('demoText1'))
       ),
     );
   }

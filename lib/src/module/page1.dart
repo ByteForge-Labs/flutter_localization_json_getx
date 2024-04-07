@@ -16,7 +16,7 @@ class Page1 extends StatelessWidget {
         title: const Text('page1'),
       ),
       body:  Center(
-        child: Text(langs.translate('additionalInfoSubtitle'))
+        child: Text(langs.translate('demoText2'))
       ),
     );
   }
